@@ -1,0 +1,33 @@
+/*Heading Page*/
+%heading {
+  width: fit-content;
+  margin: 20px 30px 30px;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 3px;
+    bottom: -10px;
+    left: 0;
+    background-color: black;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 3px;
+    background-color: #ccc;
+    right: 0;
+    bottom: -10px;
+  }
+}
+/*Heading Page*/
+/*Main-section*/
+%main-section {
+  @include border-radius-10;
+  overflow: hidden;
+  background-color: $bg-white;
+  padding: $p-section;
+}
+/*Main-section*/

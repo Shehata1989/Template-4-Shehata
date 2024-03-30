@@ -1,0 +1,709 @@
+.page .content-page .content-Projects {
+  @include media(mobile) {
+    @include grid-1-col;
+    text-align: center;
+  }
+  @include grid-3-col;
+  margin: 0 20px 20px;
+  .Projects {
+    @include media(mobile) {
+      .do {
+        flex-direction: column;
+        gap: 10px;
+      }
+      .info {
+        flex-wrap: wrap;
+        .progress {
+          margin: auto;
+        }
+        .price {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .Projects:nth-of-type(1) {
+    @extend %main-section;
+    @include box-shadow;
+    position: relative;
+    h3 {
+      margin: $m-heading;
+    }
+    p {
+      color: $color-text;
+      font-size: $f-size;
+      margin: 10px 0 20px;
+    }
+    > span {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 13px;
+      color: $color-text;
+    }
+    .team {
+      margin-top: 30px;
+      margin-bottom: 30px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #eee;
+      a {
+        img {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          border: 2px solid white;
+        }
+        &:not(:first-child) {
+          margin-left: -20px;
+        }
+      }
+    }
+    .do {
+      padding-bottom: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: end;
+      border-bottom: 1px solid #eee;
+      span {
+        background-color: #eee;
+        font-size: $f-size;
+        padding: 5px 10px;
+        margin-left: 5px;
+        @include border-radius-10;
+      }
+    }
+    .info {
+      @include between-flex;
+      padding-top: 20px;
+      .progress {
+        @include border-radius-10;
+        width: 260px;
+        height: 8px;
+        background-color: #ddd;
+        position: relative;
+        span {
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 100%;
+          background-color: $red-color;
+          @include border-radius-10;
+        }
+      }
+      .price {
+        color: $color-text;
+        font-size: $f-size;
+        i {
+        }
+      }
+    }
+  }
+  .Projects:nth-of-type(2) {
+    @extend %main-section;
+    @include box-shadow;
+    position: relative;
+    h3 {
+      margin: $m-heading;
+    }
+    p {
+      color: $color-text;
+      font-size: $f-size;
+      margin: 10px 0 20px;
+    }
+    > span {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 13px;
+      color: $color-text;
+    }
+    .team {
+      margin-top: 30px;
+      margin-bottom: 30px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #eee;
+      a {
+        img {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          border: 2px solid white;
+        }
+        &:not(:first-child) {
+          margin-left: -20px;
+        }
+      }
+    }
+    .do {
+      padding-bottom: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: end;
+      border-bottom: 1px solid #eee;
+      span {
+        background-color: #eee;
+        font-size: $f-size;
+        padding: 5px 10px;
+        margin-left: 5px;
+        @include border-radius-10;
+      }
+    }
+    .info {
+      @include between-flex;
+      padding-top: 20px;
+      .progress {
+        @include border-radius-10;
+        width: 260px;
+        height: 8px;
+        background-color: #ddd;
+        position: relative;
+        span {
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 100%;
+          background-color: $green-color;
+          @include border-radius-10;
+        }
+      }
+      .price {
+        color: $color-text;
+        font-size: $f-size;
+        i {
+        }
+      }
+    }
+  }
+  .Projects:nth-of-type(3) {
+    @extend %main-section;
+    @include box-shadow;
+    position: relative;
+    h3 {
+      margin: $m-heading;
+    }
+    p {
+      color: $color-text;
+      font-size: $f-size;
+      margin: 10px 0 20px;
+    }
+    > span {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 13px;
+      color: $color-text;
+    }
+    .team {
+      margin-top: 30px;
+      margin-bottom: 30px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #eee;
+      a {
+        img {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          border: 2px solid white;
+        }
+        &:not(:first-child) {
+          margin-left: -20px;
+        }
+      }
+    }
+    .do {
+      padding-bottom: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: end;
+      border-bottom: 1px solid #eee;
+      span {
+        background-color: #eee;
+        font-size: $f-size;
+        padding: 5px 10px;
+        margin-left: 5px;
+        @include border-radius-10;
+      }
+    }
+    .info {
+      @include between-flex;
+      padding-top: 20px;
+      .progress {
+        @include border-radius-10;
+        width: 260px;
+        height: 8px;
+        background-color: #ddd;
+        position: relative;
+        span {
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 100%;
+          background-color: $blue-color;
+          @include border-radius-10;
+        }
+      }
+      .price {
+        color: $color-text;
+        font-size: $f-size;
+        i {
+        }
+      }
+    }
+  }
+  .Projects:nth-of-type(4) {
+    @extend %main-section;
+    @include box-shadow;
+    position: relative;
+    h3 {
+      margin: $m-heading;
+    }
+    p {
+      color: $color-text;
+      font-size: $f-size;
+      margin: 10px 0 20px;
+    }
+    > span {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 13px;
+      color: $color-text;
+    }
+    .team {
+      margin-top: 30px;
+      margin-bottom: 30px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #eee;
+      a {
+        img {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          border: 2px solid white;
+        }
+        &:not(:first-child) {
+          margin-left: -20px;
+        }
+      }
+    }
+    .do {
+      padding-bottom: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: end;
+      border-bottom: 1px solid #eee;
+      span {
+        background-color: #eee;
+        font-size: $f-size;
+        padding: 5px 10px;
+        margin-left: 5px;
+        @include border-radius-10;
+      }
+    }
+    .info {
+      @include between-flex;
+      padding-top: 20px;
+      .progress {
+        @include border-radius-10;
+        width: 260px;
+        height: 8px;
+        background-color: #ddd;
+        position: relative;
+        span {
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 100%;
+          background-color: $green-color;
+          @include border-radius-10;
+        }
+      }
+      .price {
+        color: $color-text;
+        font-size: $f-size;
+        i {
+        }
+      }
+    }
+  }
+  .Projects:nth-of-type(5) {
+    @extend %main-section;
+    @include box-shadow;
+    position: relative;
+    h3 {
+      margin: $m-heading;
+    }
+    p {
+      color: $color-text;
+      font-size: $f-size;
+      margin: 10px 0 20px;
+    }
+    > span {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 13px;
+      color: $color-text;
+    }
+    .team {
+      margin-top: 30px;
+      margin-bottom: 30px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #eee;
+      a {
+        img {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          border: 2px solid white;
+        }
+        &:not(:first-child) {
+          margin-left: -20px;
+        }
+      }
+    }
+    .do {
+      padding-bottom: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: end;
+      border-bottom: 1px solid #eee;
+      span {
+        background-color: #eee;
+        font-size: $f-size;
+        padding: 5px 10px;
+        margin-left: 5px;
+        @include border-radius-10;
+      }
+    }
+    .info {
+      @include between-flex;
+      padding-top: 20px;
+      .progress {
+        @include border-radius-10;
+        width: 260px;
+        height: 8px;
+        background-color: #ddd;
+        position: relative;
+        span {
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 100%;
+          background-color: $green-color;
+          @include border-radius-10;
+        }
+      }
+      .price {
+        color: $color-text;
+        font-size: $f-size;
+        i {
+        }
+      }
+    }
+  }
+  .Projects:nth-of-type(6) {
+    @extend %main-section;
+    @include box-shadow;
+    position: relative;
+    h3 {
+      margin: $m-heading;
+    }
+    p {
+      color: $color-text;
+      font-size: $f-size;
+      margin: 10px 0 20px;
+    }
+    > span {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 13px;
+      color: $color-text;
+    }
+    .team {
+      margin-top: 30px;
+      margin-bottom: 30px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #eee;
+      a {
+        img {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          border: 2px solid white;
+        }
+        &:not(:first-child) {
+          margin-left: -20px;
+        }
+      }
+    }
+    .do {
+      padding-bottom: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: end;
+      border-bottom: 1px solid #eee;
+      span {
+        background-color: #eee;
+        font-size: $f-size;
+        padding: 5px 10px;
+        margin-left: 5px;
+        @include border-radius-10;
+      }
+    }
+    .info {
+      @include between-flex;
+      padding-top: 20px;
+      .progress {
+        @include border-radius-10;
+        width: 260px;
+        height: 8px;
+        background-color: #ddd;
+        position: relative;
+        span {
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 100%;
+          background-color: $red-color;
+          @include border-radius-10;
+        }
+      }
+      .price {
+        color: $color-text;
+        font-size: $f-size;
+        i {
+        }
+      }
+    }
+  }
+  .Projects:nth-of-type(7) {
+    @extend %main-section;
+    @include box-shadow;
+    position: relative;
+    h3 {
+      margin: $m-heading;
+    }
+    p {
+      color: $color-text;
+      font-size: $f-size;
+      margin: 10px 0 20px;
+    }
+    > span {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 13px;
+      color: $color-text;
+    }
+    .team {
+      margin-top: 30px;
+      margin-bottom: 30px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #eee;
+      a {
+        img {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          border: 2px solid white;
+        }
+        &:not(:first-child) {
+          margin-left: -20px;
+        }
+      }
+    }
+    .do {
+      padding-bottom: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: end;
+      border-bottom: 1px solid #eee;
+      span {
+        background-color: #eee;
+        font-size: $f-size;
+        padding: 5px 10px;
+        margin-left: 5px;
+        @include border-radius-10;
+      }
+    }
+    .info {
+      @include between-flex;
+      padding-top: 20px;
+      .progress {
+        @include border-radius-10;
+        width: 260px;
+        height: 8px;
+        background-color: #ddd;
+        position: relative;
+        span {
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 100%;
+          background-color: $blue-color;
+          @include border-radius-10;
+        }
+      }
+      .price {
+        color: $color-text;
+        font-size: $f-size;
+        i {
+        }
+      }
+    }
+  }
+  .Projects:nth-of-type(8) {
+    @extend %main-section;
+    @include box-shadow;
+    position: relative;
+    h3 {
+      margin: $m-heading;
+    }
+    p {
+      color: $color-text;
+      font-size: $f-size;
+      margin: 10px 0 20px;
+    }
+    > span {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 13px;
+      color: $color-text;
+    }
+    .team {
+      margin-top: 30px;
+      margin-bottom: 30px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #eee;
+      a {
+        img {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          border: 2px solid white;
+        }
+        &:not(:first-child) {
+          margin-left: -20px;
+        }
+      }
+    }
+    .do {
+      padding-bottom: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: end;
+      border-bottom: 1px solid #eee;
+      span {
+        background-color: #eee;
+        font-size: $f-size;
+        padding: 5px 10px;
+        margin-left: 5px;
+        @include border-radius-10;
+      }
+    }
+    .info {
+      @include between-flex;
+      padding-top: 20px;
+      .progress {
+        @include border-radius-10;
+        width: 260px;
+        height: 8px;
+        background-color: #ddd;
+        position: relative;
+        span {
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 100%;
+          background-color: $green-color;
+          @include border-radius-10;
+        }
+      }
+      .price {
+        color: $color-text;
+        font-size: $f-size;
+        i {
+        }
+      }
+    }
+  }
+  .Projects:nth-of-type(9) {
+    @extend %main-section;
+    @include box-shadow;
+    position: relative;
+    h3 {
+      margin: $m-heading;
+    }
+    p {
+      color: $color-text;
+      font-size: $f-size;
+      margin: 10px 0 20px;
+    }
+    > span {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 13px;
+      color: $color-text;
+    }
+    .team {
+      margin-top: 30px;
+      margin-bottom: 30px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #eee;
+      a {
+        img {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          border: 2px solid white;
+        }
+        &:not(:first-child) {
+          margin-left: -20px;
+        }
+      }
+    }
+    .do {
+      padding-bottom: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: end;
+      border-bottom: 1px solid #eee;
+      span {
+        background-color: #eee;
+        font-size: $f-size;
+        padding: 5px 10px;
+        margin-left: 5px;
+        @include border-radius-10;
+      }
+    }
+    .info {
+      @include between-flex;
+      padding-top: 20px;
+      .progress {
+        @include border-radius-10;
+        width: 260px;
+        height: 8px;
+        background-color: #ddd;
+        position: relative;
+        span {
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 100%;
+          background-color: $red-color;
+          @include border-radius-10;
+        }
+      }
+      .price {
+        color: $color-text;
+        font-size: $f-size;
+        i {
+        }
+      }
+    }
+  }
+}

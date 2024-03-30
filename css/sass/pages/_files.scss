@@ -1,0 +1,155 @@
+.page .content-page .files-page {
+  @include between-flex;
+  flex-wrap: wrap;
+  align-items: start;
+  margin: 0 20px 20px;
+  .content-files {
+    flex: 1;
+    @include media(mobile) {
+      @include grid-1-col;
+      text-align: center;
+      order: 2;
+    }
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    .file {
+      @extend %main-section;
+      @include box-shadow;
+      position: relative;
+      text-align: center;
+      i {
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        color: $color-text;
+        cursor: pointer;
+        &:hover {
+          color: $red-color;
+        }
+      }
+      img {
+        width: 64px;
+        height: 64px;
+        &:hover {
+          transform: rotate(10deg);
+        }
+      }
+      .text {
+        text-align: center;
+        font-size: $f-size;
+        p {
+          text-align: left;
+          color: $color-text;
+        }
+      }
+    }
+    .info {
+      @include between-flex;
+      padding: 20px 0;
+      font-size: $f-size;
+      color: $color-text;
+      border-top: 1px solid #eee;
+      span {
+      }
+    }
+  }
+  .stats-files {
+    @include media(mobile) {
+      width: 100%;
+      order: 1;
+    }
+    @extend %main-section;
+    @include box-shadow;
+    min-width: 250px;
+  }
+  h2 {
+    margin: $m-heading;
+  }
+  @for $i from 1 through 4 {
+    div.stat-#{$i} {
+      @include border-radius-10;
+      @include between-flex;
+      gap: 5px;
+      font-size: 13px;
+      margin-bottom: 20px;
+      padding: 5px;
+      border: 1px solid #eee;
+      span {
+        color: $color-text;
+      }
+      .info {
+        flex: 1;
+        p {
+          margin: 0;
+        }
+      }
+    }
+  }
+  div.stat-1 {
+    i {
+      @include flex-c;
+      width: 40px;
+      height: 40px;
+      background-color: rgba($blue-color, 0.2);
+      color: $blue-color;
+    }
+  }
+  div.stat-2 {
+    i {
+      @include flex-c;
+      width: 40px;
+      height: 40px;
+      background-color: rgba($green-color, 0.2);
+      color: $green-color;
+    }
+  }
+  div.stat-3 {
+    i {
+      @include flex-c;
+      width: 40px;
+      height: 40px;
+      background-color: rgba($red-color, 0.2);
+      color: $red-color;
+    }
+  }
+  div.stat-4 {
+    i {
+      @include flex-c;
+      width: 40px;
+      height: 40px;
+      background-color: rgba($orange-color, 0.2);
+      color: $orange-color;
+    }
+  }
+  a {
+    @include reset-links;
+    display: block;
+    width: fit-content;
+    padding: 10px 10px;
+    background-color: $blue-color;
+    margin: 0 auto;
+    border-radius: 6px;
+    color: white;
+    font-size: $f-size;
+    &:hover {
+      i {
+        animation: 0.8s arrow ease infinite;
+      }
+    }
+    i {
+      color: white;
+      margin-right: 5px;
+    }
+  }
+}
+
+@keyframes arrow {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}

@@ -1,0 +1,57 @@
+
+.page {
+  .content-page {
+    header.header-content {
+      background-color: $bg-white;
+      padding: $p-section;
+      @include between-flex;
+      .search {
+        position: relative;
+        input {
+          @include reset-input;
+          @include border-1;
+          width: 160px;
+          padding: 5px 5px 5px 30px;
+          &::placeholder {
+            font-size: $f-size;
+          }
+          &:focus {
+            width: 200px;
+          }
+          &:focus::placeholder {
+            opacity: 0;
+          }
+        }
+        i {
+          @include position-y-c;
+          position: absolute;
+          left: 0;
+          padding-left: 5px;
+          color: #555;
+        }
+      }
+      .icons {
+        @include between-flex;
+        gap: 0;
+        span {
+          position: relative;
+          margin-right: 25px;
+          &::before {
+            content: "";
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background-color: $red-color;
+            top: -8px;
+            right: -5px;
+            border-radius: 50%;
+          }
+        }
+        img {
+          width: 30px;
+        }
+      }
+    }
+  }
+}
+
